@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-- พื้นหลัง -->
@@ -36,7 +37,7 @@
             </div>
                 <!-- การกระทำ -->
             <div class="operation">
-                <button onclick="appendToDisplay('/')" class="op_item">%</button>
+                <button onclick="deleteLastCharacter()" class="op_item"><i class='bx bxs-left-arrow'></i></button>
                 <button onclick="clearDisplay('c')" class="op_item">C</button>
                 <button onclick="appendToDisplay('-')" class="op_item">-</button>
                 <button onclick="appendToDisplay('/')" class="op_item">/</button>
@@ -50,6 +51,6 @@
             </div> 
         </div>
     </div>
-<script src="marn.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
